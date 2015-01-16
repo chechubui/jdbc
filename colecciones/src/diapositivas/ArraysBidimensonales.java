@@ -43,17 +43,18 @@ public class ArraysBidimensonales {
 		
 	// hacer una matriz cambiando los valores del anterior array
 		
-		/*int [][] array2 = new int [4][3];
+		int [][] array2 = new int [4][3];
 		
-		for (int fila = 0; fila < array.length ; fila++) {
-			for (int columna=0;columna<array[fila].length;columna++){
+		for (int  fila = array.length-1;fila>=0 ; fila--) {
+			for (int columna= array[fila].length-1; columna >=0 ;columna--){
+			array2[fila][columna]=array[fila][columna];
 			System.out.print(array[fila][columna]+"\t");
 			//System.out.println("en el vector ["+fila+"]["+columna+"] "+array[fila][columna] + " ");
 			}
 			System.out.println();
 			//System.out.println("\n");
 
-		}*/
+		}
 		
 		
 	}
