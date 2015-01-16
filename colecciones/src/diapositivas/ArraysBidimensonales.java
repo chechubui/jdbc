@@ -48,7 +48,7 @@ public class ArraysBidimensonales {
 		for (int  fila = array.length-1;fila>=0 ; fila--) {
 			for (int columna= array[fila].length-1; columna >=0 ;columna--){
 			array2[fila][columna]=array[fila][columna];
-			System.out.print(array[fila][columna]+"\t");
+			System.out.print(array2[fila][columna]+"\t");
 			//System.out.println("en el vector ["+fila+"]["+columna+"] "+array[fila][columna] + " ");
 			}
 			System.out.println();
