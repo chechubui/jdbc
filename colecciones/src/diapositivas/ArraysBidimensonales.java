@@ -38,20 +38,30 @@ public class ArraysBidimensonales {
 		double media = suma/totalvector;
 		System.out.println("El tamaño del vector es = "+totalvector);
 		System.out.println("La suma de los valores introducidos es = "+suma);
-		System.out.println("La media del los valor introducidos es = "+media);
+		System.out.println("La media del los valor introducidos es = "+media+"\n");
 		 
 		
 	// hacer una matriz cambiando los valores del anterior array
 		
 		int [][] array2 = new int [4][3];
+		//contador de filas
+		int contadorFilas=0;
 		
 		for (int  fila = array.length-1;fila>=0 ; fila--) {
-			for (int columna= array[fila].length-1; columna >=0 ;columna--){
+			//contador Columnas
+			int contadorColumnas=0;
+			for (int columna= array[fila].length-1; columna >=0 ;columna--){	
 			array2[fila][columna]=array[fila][columna];
-			System.out.print(array2[fila][columna]+"\t");
-			//System.out.println("en el vector ["+fila+"]["+columna+"] "+array[fila][columna] + " ");
+			
+			//System.out.print(array2[fila][columna]+"\t");
+			//System.out.println("en el vector1 ["+fila+"]["+columna+"] "+array[fila][columna] + " ");
+			
+			System.out.println("en el vector2 ["+contadorFilas+"]["+contadorColumnas+"] "+array2[fila][columna] + " ");
+				contadorColumnas++;
 			}
+			contadorFilas++;
 			System.out.println();
+			
 			//System.out.println("\n");
 
 		}
