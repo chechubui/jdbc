@@ -1,3 +1,9 @@
+/**
+ * Ejercicio 3 Tema 9 
+ * @author Jesus
+ * @version 1.0
+ * */
+
 package ejercicios;
 
 import java.util.Arrays;
@@ -6,13 +12,23 @@ public class Datos {
 	//atributo
 	private double [] array;
 
+	/**
+	 * constructor
+	 * @param array
+	 * @param nif
+	 * @param edad
+	 */
 	//constructor
 	public Datos(double[] array) {
 		this.array = array;
 	}
 
-	//metodo del valor medio de los datos
 	
+	/**
+	 * metodo del valor medio de los datos
+	 * @return nos devuelve el valor medio 
+	 */
+	//metodo del valor medio de los datos
 	public double valorMedio(){
 		double suma=0;
 		for (int i = 0; i < array.length; i++) {
@@ -22,6 +38,10 @@ public class Datos {
 		
 	}
 	
+	/**
+	 * metodo de desviacion tipica
+	 * @return devuelve la desviacion Tipica
+	 * */
 	// metodo de desviacion tipica
 	
 	public double desviacionTipica(){
