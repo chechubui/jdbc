@@ -8,13 +8,13 @@ public class TestTienda {
 		// TODO Auto-generated method stub
 		int id =0;
 		Tienda tienda= new Tienda();
-		tienda.addProducto(new Producto(0, "CD" , 3));
+		tienda.addProducto(new Producto(id++, "CD" , 3));
 		//otra forma de hacerla
-		Producto p1 = new Producto(1, "DVD", 6);
+		Producto p1 = new Producto(id++, "DVD", 6);
 		tienda.addProducto(p1);
-		tienda.addProducto(new Producto(2, "lector CD" , 5));
+		tienda.addProducto(new Producto(id++, "lector CD" , 5));
 		//otra forma de hacerla
-		Producto p2 = new Producto(3, "lector DVD", 12);
+		Producto p2 = new Producto(id++, "lector DVD", 12);
 		tienda.addProducto(p2);
 		System.out.println(tienda);
 		System.out.println("Producto mas Barato "+tienda.productoMasBarato());
@@ -29,8 +29,13 @@ public class TestTienda {
 			tienda.addProducto(new Producto(id++,nombreProducto,precioProducto));
 			
 		}
-		System.out.println(tienda);
+		in.close();
+		//System.out.println(tienda);
 		
+		//eliminar un producto de la tienda
+		tienda.eliminarProducto(p1);
+		tienda.eliminarProducto(tienda.getListaTienda().get(0));
+		System.out.println(tienda);
 	}
 
 }
