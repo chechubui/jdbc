@@ -16,6 +16,7 @@ public class Strings2 {
 		System.out.println("Introduce la frase");
 		String frase = in.nextLine();
 		System.out.println(frase);
+		in.close();
 		
 		//la expresion regular es ;.*[0-9]+.*
 		//. es cualquier caracter excepto el salto de linea
