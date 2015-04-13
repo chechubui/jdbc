@@ -79,7 +79,13 @@ public class EditorFicheros {
 		JButton botonGuardar = new JButton("Guardar");
 		botonGuardar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				//int returnValor = fileChooser.showSaveDialog(frame);
+				//System.out.println(returnValor);
+				/*if (returnValor== JFileChooser.APPROVE_OPTION) {
+					File fileSelected = fileChooser.getSelectedFile();
+					LeeFichero ficheroLeido = new LeeFichero(fileSelected);
+					textArea.setText(ficheroLeido.getArchivo());
+				}*/
 			}
 		});
 		JButton botonSalir = new JButton("Salir");
