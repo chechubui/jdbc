@@ -29,7 +29,8 @@ public class PrintWriter1 {
 			for (int i = 0; i < 10; i++) {
 				lineaLeida = in.readLine();
 				if(lineaLeida==null)break;
-				out.write(lineaLeida+"\n");
+				//out.write(lineaLeida+"\n");
+				out.println(lineaLeida);
 			}
 		}
 		catch (IOException ex) {
